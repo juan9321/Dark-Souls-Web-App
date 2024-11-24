@@ -1,0 +1,98 @@
+.card {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url(../img/logo/RG.png);
+    background-position: right top;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#ffffff;
+}
+
+.card-header {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.card-content {
+    display: flex;
+    width: 100%;
+}
+
+.card img {
+    border-radius: 5px;
+    width: 240px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.card-details p strong {
+    display: inline-block;
+    width: 180px;
+}
+
+@media (max-width: 768px) {
+    .card-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card img {
+        margin: 0 0 20px 0;
+    }
+
+    .card-details p strong {
+        width: auto;
+    }
+}
+
+
+.editar {
+    background-color: #4B0082;
+    color           : #ffffff;
+    border          : none;
+    padding         : 10px 20px;
+    border-radius   : 5px;
+    margin-top      : 10px;
+    cursor          : pointer;
+    transition      : background-color 0.3s;
+}
+
+.editar:hover {
+    background-color: #800080;
+}
+
+
+.excluir {
+    background-color: #4B0082;
+    color           : #ffffff;
+    border          : none;
+    padding         : 10px 20px;
+    border-radius   : 5px;
+    margin-top      : 10px;
+    cursor          : pointer;
+    transition      : background-color 0.3s;
+}
+
+.excluir:hover {
+    background-color: #800080;
+}

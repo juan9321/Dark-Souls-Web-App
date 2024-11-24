@@ -1,0 +1,48 @@
+/* Importa a fonte Montserrat do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.navimg {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* Navbar da página */
+nav {
+    --primary-color: #4B0082;
+    --text-color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 100%;
+    padding: 10px;
+    font-family: 'Montserrat', Arial, sans-serif; /* Adiciona a fonte Montserrat */
+}
+  
+/* Efeitos de hover para links na navbar */
+.navbar a:hover {
+    text-decoration: bold;
+    color: #B19CD9;
+}
+  
+/* Estilos para o botão do toggler na navbar */
+.navbar-toggler {
+    border: transparent;
+}
+  
+/* Estilos para o foco do botão do toggler na navbar */
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: transparent var(--bs-navbar-toggler-focus-width);
+}
+  
+/* Footer da página */
+footer {
+    background-color: #4B0082;
+    color: #FFFFFF;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', Arial, sans-serif; /* Adiciona a fonte Montserrat */
+}

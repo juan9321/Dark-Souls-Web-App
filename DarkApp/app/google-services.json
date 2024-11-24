@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "225101462140",
+    "project_id": "porject-a6940",
+    "storage_bucket": "porject-a6940.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225101462140:android:b1052bd6e30367d75ae7f9",
+        "android_client_info": {
+          "package_name": "com.example.darkapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225101462140-361tbuo38iapsthou7dcl7ip3e52tpl9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlnZS1lSS2b9Z7ROEapyWgdHuTNqIE9Fg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225101462140-361tbuo38iapsthou7dcl7ip3e52tpl9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

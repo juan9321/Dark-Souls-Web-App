@@ -1,0 +1,60 @@
+.cards-container {
+  max-width: 1200px; /* Largura máxima para manter a responsividade */
+  margin: 0 auto; /* Centraliza o container na tela */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cria colunas responsivas */
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+  transition: box-shadow 0.3s ease; /* Efeito de transição na sombra */
+  background-color: #ffffff; /* Cor de fundo do card */
+  border-radius: 8px; /* Borda arredondada */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px; /* Espaçamento superior da imagem */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  margin-bottom: 15px;
+}
+
+.btn-ver-mais {
+  background-color: #4B0082;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+
+}
+
+.btn-ver-mais:hover {
+  background-color: #800080;
+}

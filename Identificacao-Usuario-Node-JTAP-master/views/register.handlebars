@@ -1,0 +1,105 @@
+<head>
+     <link rel="stylesheet" href="/public/css/adicionar.css">
+</head>
+
+<form class="editar" action="/create/build" method="POST">
+    <h1 class="top-text">Cadastrar Personagem</h1>
+
+    <div class="img">
+        <img src="https://via.placeholder.com/150" alt="Imagem da Build" id="build-imagem">
+    </div>
+    
+    <div class="mb-3 text-start">
+        <label class="form-label">Imagem</label>
+        <select class="form-control" id="imagem" name="imagem" required>
+          <option value="" selected>-- Selecione --</option>
+          <option value="Artorias.jpg">Artorias</option>
+          <option value="Assasino.jpg">Assassino</option>
+          <option value="Firo.jpg">Firo</option>
+          <option value="Gigante.jpg">Gigante</option>
+          <option value="Guerreiro.jpg">Guerreiro</option>
+          <option value="Mago.jpg">Mago</option>
+          <option value="Orsntein.jpg">Orsntein</option>
+          <option value="Quality.jpg">Quality</option>
+          <option value="Silver.jpg">Silver</option>
+          <option value="Soul.jpg">Soul</option>
+        </select>
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Nome:</label>
+        <input type="text" name="nome" class="form-control" required id="nome" value="">
+    </div>
+
+    <!-- Campos de estatísticas -->
+    <div class="mb-3 text-start">
+        <label class="form-label">Vigor (VGR):</label>
+        <input type="number" name="vigor" class="form-control" required id="vigor" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Endurance (END):</label>
+        <input type="number" name="endurance" class="form-control" required id="endurance" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Vitality (VIT):</label>
+        <input type="number" name="vitality" class="form-control" required id="vitality" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Strength (STR):</label>
+        <input type="number" name="strength" class="form-control" required id="strength" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Dexterity (DEX):</label>
+        <input type="number" name="dexterity" class="form-control" required id="dexterity" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Intelligence (INT):</label>
+        <input type="number" name="intelligence" class="form-control" required id="intelligence" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Faith (FTH):</label>
+        <input type="number" name="faith" class="form-control" required id="faith" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Attunement (ATN):</label>
+        <input type="number" name="attunement" class="form-control" required id="attunement" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Luck (LCK):</label>
+        <input type="number" name="luck" class="form-control" required id="luck" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Armas:</label>
+        <input type="text" name="armas" class="form-control" required id="armas" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Armaduras:</label>
+        <input type="text" name="armaduras" class="form-control" required id="armaduras" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Anéis:</label>
+        <input type="text" name="aneis" class="form-control" required id="aneis" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Feitiços:</label>
+        <input type="text" name="feiticos" class="form-control" required id="feiticos" value="">
+    </div>
+
+    <div class="mb-3 text-start">
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </div>
+</form>
+
+<script src="/public/js/builds.js"></script>

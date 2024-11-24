@@ -1,0 +1,158 @@
+<head>
+    <style>
+        /* Definir o fundo escuro e o tema sombrio para esta página */
+        .dark-souls-page {
+            color: #e6e6e6; /* Texto claro */
+            font-family: 'Georgia', serif; /* Fonte medieval para esta página */
+            margin: 0;
+            padding: 0;
+            font-size: 18px; /* Tamanho de fonte adequado */
+        }
+
+        /* Card com estilo Dark Souls */
+        .card {
+            background-color: #121212; /* Fundo mais profundo do card */
+            border-radius: 15px;
+            border: 2px solid #333; /* Borda escura e sutil */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9); /* Sombras profundas */
+            margin: 40px auto;
+            padding: 25px;
+            max-width: 900px;
+            background-image: url('/public/img/dark-texture.jpg'); /* Textura sombria */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden; /* Evitar que elementos saiam do card */
+            transition: all 0.4s ease;
+        }
+
+        /* Efeito de hover no card */
+        .card:hover {
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.7), 0 0 60px rgba(0, 0, 0, 0.8); /* Iluminação nas bordas */
+        }
+
+        /* Estilo do cabeçalho do card */
+        .card-header {
+            font-size: 40px;
+            text-align: center;
+            color: #f2f2f2; /* Texto claro */
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Sombras no cabeçalho */
+            margin-bottom: 25px;
+            letter-spacing: 4px; /* Espaçamento entre as letras */
+            text-transform: uppercase; /* Títulos em maiúsculas */
+        }
+
+        /* Estilo do conteúdo do card */
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+            position: relative;
+        }
+
+        /* Imagem do personagem */
+        #preso-imagem {
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            border: 5px solid #333; /* Borda escura */
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.8); /* Sombras intensas */
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        /* Efeito de hover na imagem */
+        #preso-imagem:hover {
+            transform: scale(1.1); /* Aumento suave na imagem */
+            box-shadow: 0 0 60px rgba(255, 255, 255, 0.8); /* Brilho suave */
+        }
+
+        /* Detalhes do card */
+        .card-details p {
+            font-size: 22px;
+            margin: 20px 0;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Sombras no texto */
+            line-height: 1.6; /* Maior espaçamento entre as linhas */
+            color: #d1d1d1; /* Texto mais suave */
+        }
+
+        /* Destacar os títulos dos detalhes */
+        .card-details strong {
+            color: #b08d57; /* Leve brilho dourado nos títulos */
+            font-size: 24px;
+        }
+
+        /* Estilo dos botões */
+        button {
+            background-color: #333; /* Fundo escuro do botão */
+            color: #f2f2f2; /* Texto claro no botão */
+            border: none;
+            padding: 18px 30px;
+            font-size: 22px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+            margin-top: 25px;
+            text-transform: uppercase; /* Botões em letras maiúsculas */
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.6); /* Sombra no botão */
+        }
+
+        button:hover {
+            background-color: #444; /* Escurece ao passar o mouse */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Brilho suave */
+            transform: translateY(-4px); /* Efeito de levitação */
+        }
+
+        /* Adicionar uma camada escura sobre o conteúdo do card */
+        .card-content::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Camada escura */
+            z-index: -1;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<div class="dark-souls-page">
+    <div class="card">
+        <div class="card-header">Dark Build</div>
+        <div class="card-content">
+            <img src="/public/img/builds/{{build.imagem}}" alt="Imagem do bandido" id="preso-imagem">
+            <div class="card-details">
+                <p><strong>Nome:</strong> <span id="nome">{{build.nome}}</span></p>
+                <p><strong>Vigor (VGR):</strong> <span id="vigor">{{build.vigor}}</span></p>
+                <p><strong>Endurance (END):</strong> <span id="endurance">{{build.endurance}}</span></p>
+                <p><strong>Vitality (VIT):</strong> <span id="vitality">{{build.vitality}}</span></p>
+                <p><strong>Strength (STR):</strong> <span id="strength">{{build.strength}}</span></p>
+                <p><strong>Dexterity (DEX):</strong> <span id="dexterity">{{build.dexterity}}</span></p>
+                <p><strong>Intelligence (INT):</strong> <span id="intelligence">{{build.intelligence}}</span></p>
+                <p><strong>Faith (FTH):</strong> <span id="faith">{{build.faith}}</span></p>
+                <p><strong>Attunement (ATN):</strong> <span id="attunement">{{build.attunement}}</span></p>
+                <p><strong>Luck (LCK):</strong> <span id="luck">{{build.luck}}</span></p>
+                <p><strong>Armas:</strong> <span id="armas">{{build.armas}}</span></p>
+                <p><strong>Armaduras:</strong> <span id="armaduras">{{build.armaduras}}</span></p>
+                <p><strong>Anéis:</strong> <span id="aneis">{{build.aneis}}</span></p>
+                <p><strong>Feitiços:</strong> <span id="feiticos">{{build.feiticos}}</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts opcionais para funcionalidades de edição e exclusão -->
+<script>
+    function editarPreso() {
+        alert('Editar bandido: Implemente sua lógica aqui.');
+    }
+
+    function excluirPreso() {
+        if (confirm('Tem certeza que deseja excluir este bandido?')) {
+            alert('Bandido excluído: Implemente sua lógica aqui.');
+        }
+    }
+</script>
